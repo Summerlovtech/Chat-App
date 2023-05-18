@@ -1,0 +1,41 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node server.js",
+    "build": "npx webpack"
+  },
+  "name": "project2",
+  "description": "* start from the up-to-date main branch (`git checkout main; git pull origin main`) * Create a feature branch named 'js-service-calls' (`git checkout -b js-service-calls`) * Add and Modify the files in this directory to have the require features * Add, commit, and push the branch to github * Create a PR to merge to main * Be sure to include the TA(s) and I as reviewers.   * Due by **Sun Mar 12 11:59pm (PT)**",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "crypto-browserify": "^3.12.0",
+    "express": "^4.18.2",
+    "request": "^2.79.0",
+    "url": "^0.11.0",
+    "uuid": "^9.0.0"
+  },
+  "options": {
+    "fallback": {
+      "crypto-browserify": "require.resolve('crypto-browserify')"
+    }
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "core-js": "^3.29.0",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  }
+}

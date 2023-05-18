@@ -1,0 +1,235 @@
+html{
+    background-image: url(img/blur-background-with-pastel-color.jpg);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(img/blur-background-with-pastel-color.jpg);
+    opacity: 0.7;
+    text-align: center;
+    color: #3A506B;
+}
+
+.login-div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin: 0.5rem;
+    background-color: #BDD5EA; 
+}
+
+.home-title{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+}
+
+.user-login {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    height: 40%;
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    background-color: #fff; 
+    border-radius:2rem;
+}
+.login-title{
+    margin: 1rem 0;
+}
+.login-btn{
+    width: 50%;
+    border-radius: 2rem;
+    margin: 1rem 25%;
+}
+.warning-message {
+    color:crimson;
+    font-weight:bolder;
+}
+
+.chat-box {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 60%;
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #ffffff61;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-weight:bolder;
+    text-align:center;
+    margin-top: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+h2{
+    margin: 0;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.logged-users{
+    text-align: left;
+    background: #d1e0efdb;
+    width: 25%;
+    height: 100%;
+    float: right;
+    border-top-right-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+}
+active-user-list {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9em;
+    padding: 1em;
+    margin: 0;
+    font-weight: 300;
+    text-align: center;
+} 
+
+.chat {
+    background:#BDD5EA;
+    width: 600px;
+    height: 75%;
+    border-radius: 0.2em;
+    position: relative;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+}
+.chat-message{
+    display: flex;
+    flex: 1;
+    height: 1rem;
+}
+.chat-content{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: #a8d1e31c;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.chat-history{
+    margin:0;
+}
+.chat-ul{
+    list-style: none;
+    flex-grow: 0;
+    margin: 0;
+    text-align: left;
+    margin-right: -1rem;
+    min-height: 46px;
+}
+.message-block {
+    color: black;
+}
+.chat-msg{
+    position: relative;
+    list-style: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left:40%;
+    width: 50%;
+    background-color: #fff;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+.chat-msg::after{
+    content: "";
+    position: absolute;
+    border: 0.5rem solid transparent;
+    border-left-color: #fff;
+    right: -1rem;
+    top: 1rem;
+}
+.other-chat-msg{
+    position: relative;
+    list-style: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    background-color: #fff;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+.other-chat-msg::after{
+    content: "";
+    position: absolute;
+    border: 0.5rem solid transparent;
+    border-right-color: #fff;
+    left: -1rem;
+    top: 1rem;
+}
+.user-name{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+.send-button{
+position: fixed;
+bottom: 5%;
+left: 0;
+right: 0;
+margin: auto;
+}
+
+button {
+    margin-bottom: 0.2rem;
+    border-radius: 15%;
+    background-color:#164E63;
+    color: #F8FAFC;
+}
+
+.gg-spinner {
+    transform: scale(var(--ggs,1))
+}
+    .gg-spinner,
+    .gg-spinner::after,
+    .gg-spinner::before {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 20px
+    }
+
+    .gg-spinner::after,
+    .gg-spinner::before {
+    content: "";
+    position: absolute;
+    border-radius: 100px
+    }
+
+    .gg-spinner::before {
+    animation: spinner 1s
+    cubic-bezier(.6,0,.4,1) infinite;
+    border: 3px solid transparent;
+    border-top-color: currentColor
+    }
+
+    .gg-spinner::after {
+    border: 3px solid;
+    opacity: .2
+    }
+
+
+
+    @keyframes spinner {
+    0% { transform: rotate(0deg) }
+    to { transform: rotate(359deg) }
+    } 
